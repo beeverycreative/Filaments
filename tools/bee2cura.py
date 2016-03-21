@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python2
 # -*- coding: utf-8 -*-
 
 import os
@@ -108,8 +108,8 @@ if __name__ == "__main__":
 
     try:
         os.mkdir(args.ini_path)
-    except FileExistsError:
-        if os.path.isfile(args.ini_path):
+    except OSError as ex:
+        if ex.errno == 17 and os.path.isfile(args.ini_path):
             print("ERROR: The given output path is a file. Please specify a "
                     "path to a folder.")
             sys.exit(1)
