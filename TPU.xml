@@ -11,17 +11,17 @@
     <parameter name="fill_density" value="5"/>
     <parameter name="nozzle_size" value="0.6"/>
     <parameter name="print_speed" value="20"/>
-    <parameter name="print_temperature" value="235"/>
+    <parameter name="print_temperature" value="220"/>
     <parameter name="support" value="None"/>
     <parameter name="platform_adhesion" value="None"/>
     <parameter name="filament_diameter" value="1.75"/>
     <parameter name="filament_flow" value="105"/>
-    <parameter name="retraction_speed" value="125"/>
-    <parameter name="retraction_amount" value="2.5"/>
+    <parameter name="retraction_speed" value="150"/>
+    <parameter name="retraction_amount" value="4.5"/>
     <parameter name="retraction_dual_amount" value="16.5"/>
     <parameter name="retraction_min_travel" value="1.5"/>
     <parameter name="retraction_combing" value="All"/>
-    <parameter name="retraction_minimal_extrusion" value="0.1"/>
+    <parameter name="retraction_minimal_extrusion" value="0.02"/>
     <parameter name="retraction_hop" value="0.0"/>
     <parameter name="bottom_thickness" value="0.2"/>
     <parameter name="layer0_width_factor" value="100.0"/>
