@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for file in ./*
+do
+    if [[ "${file}" == *".xml" ]]; then
+        echo $file
+        xmllint --format "${file}" -o "${file}"
+    fi
+done
