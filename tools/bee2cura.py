@@ -59,9 +59,10 @@ def generate_ini_from_xml(xml_file, output_path):
     defaults = {}
     count = 0
 
-    filament_name = xml_file.find('name').text.replace(' ', '_')
-    filament_name = filament_name.replace('-','_')
-    filament_name = re.sub('_+', '_', filament_name).strip()
+    filament_name = xml_file.find('name').text.strip()
+    #filament_name = xml_file.find('name').text.replace(' ', '_')
+    #filament_name = filament_name.replace('-','_')
+    #filament_name = re.sub('_+', '_', filament_name).strip()
     
     for param in xml_file.find('defaults').findall('parameter'):
         defaults[param.get('name')] = param.get('value')
@@ -72,9 +73,13 @@ def generate_ini_from_xml(xml_file, output_path):
             nozzle_size = nozzle.get('type')
             for res in nozzle.findall('resolution'):
                 resolution = res.get('type')
-                output_filename = filament_name + "-" + printer_name + \
-                                  "-" + nozzle_size + "-" + resolution + \
-                                  ".ini" 
+
+                if resolution == "high+":
+                    resolution = "highplus"
+
+                output_filename = filament_name + "_" + printer_name + \
+                                  "_" + resolution + "_" + "NZ" + \
+                                  nozzle_size + ".ini" 
                 count += 1
 
                 overrides = {}
@@ -118,7 +123,7 @@ if __name__ == "__main__":
 
     total_count = 0
     for f in xml_files:
-        total_count += generate_ini_from_xml(f, "ini_files")
+        total_count += generate_ini_from_xml(f, args.ini_path)
 
     print(str(total_count) + " ini files have been generated")
     sys.exit(0)
