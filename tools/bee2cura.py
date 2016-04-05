@@ -16,6 +16,20 @@ __author__ = 'João Grego'
 __email__ = "jgrego@beeverycreative.com"
 
 COMPATIBLE_VERSION="2.0.0"
+START_GCODE="M300\n\t" + \
+            "M107\n\t" + \
+            "G28\n\t" + \
+            "G92 E\n\t" + \
+            "M130 T6 U1.3 V80\n\t" + \
+            "G1 X-98.0 Y-20.0 Z5.0 F3000\n\t" + \
+            "G1 Y-70.0 Z0.3\n\t" + \
+            "G1 X-98.0 Y66.0 F500 E40\n\t" + \
+            "G92 E"
+END_GCODE="M300\n\t" + \
+          "G28 X\n\t" + \
+          "G28 Z\n\t" + \
+          "G1 Y65\n\t" + \
+          "G92 E" 
 
 def fetch_files(path_to_files, version):
     """
@@ -92,6 +106,12 @@ def generate_ini_from_xml(xml_file, output_path):
                 output_file.write("[profile]")
                 for param in merged_settings.items():
                     output_file.write('\n' + param[0] + "=" + param[1])
+
+                output_file.write("\n\n[alterations]")
+                output_file.write('\n' + "start.gcode" + "=" + "M109 S" + \
+                        merged_settings['print_temperature'] + "\n\t" + \
+                        START_GCODE)
+                output_file.write('\n' + "end.gcode" + "=" + END_GCODE)
                 output_file.close()
 
     return count
