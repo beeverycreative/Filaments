@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <filament>
   <version>2.0.0</version>
-  <name>A TPU BEESUPPLY</name>
+  <name>B101 - Natural (TPU)</name>
   <defaults>
     <parameter name="ooze_shield" value="False"/>
-    <parameter name="layer_height" value="0.3"/>
+    <parameter name="layer_height" value="0.2"/>
     <parameter name="wall_thickness" value="1.2"/>
     <parameter name="retraction_enable" value="True"/>
-    <parameter name="solid_layer_thickness" value="0.8"/>
+    <parameter name="solid_layer_thickness" value="1.0"/>
     <parameter name="fill_density" value="5"/>
     <parameter name="nozzle_size" value="0.6"/>
     <parameter name="print_speed" value="20"/>
-    <parameter name="print_temperature" value="220"/>
+    <parameter name="print_temperature" value="225"/>
     <parameter name="support" value="None"/>
     <parameter name="platform_adhesion" value="None"/>
     <parameter name="filament_diameter" value="1.75"/>
@@ -76,36 +76,33 @@
   <printer type="BEETHEFIRSTPLUS">
     <nozzle type="600">
       <resolution type="low">
-		<parameter name="solid_layer_thickness" value="1.2"/>
-		<parameter name="filament_flow" value="110"/>
+		<parameter name="solid_layer_thickness" value="1.5"/>
 		<parameter name="bottom_thickness" value="0.3"/>
+		<parameter name="layer_height" value="0.3"/>
       </resolution>
       <resolution type="medium">
-		<parameter name="layer_height" value="0.2"/>
       </resolution>
     </nozzle>
   </printer>
   <printer type="BEEME">
 	<nozzle type="600">
       <resolution type="low">
-		<parameter name="solid_layer_thickness" value="1.2"/>
-		<parameter name="filament_flow" value="110"/>
+		<parameter name="solid_layer_thickness" value="1.5"/>
 		<parameter name="bottom_thickness" value="0.3"/>
+		<parameter name="layer_height" value="0.3"/>
       </resolution>
       <resolution type="medium">		
-        <parameter name="layer_height" value="0.2"/>
       </resolution>
     </nozzle>
   </printer>
   <printer type="BEEINSCHOOL">
 	<nozzle type="600">
       <resolution type="low">
-		<parameter name="solid_layer_thickness" value="1.2"/>
-		<parameter name="filament_flow" value="110"/>
+		<parameter name="solid_layer_thickness" value="1.5"/>
 		<parameter name="bottom_thickness" value="0.3"/>
+        <parameter name="layer_height" value="0.3"/>
       </resolution>
       <resolution type="medium">		
-        <parameter name="layer_height" value="0.2"/>
       </resolution>
     </nozzle>
   </printer>
