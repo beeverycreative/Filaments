@@ -15,7 +15,7 @@ The resulting ini files will be deposited in the path requested by the user."""
 __author__ = 'João Grego'
 __email__ = "jgrego@beeverycreative.com"
 
-COMPATIBLE_VERSION="2.0.0"
+COMPATIBLE_VERSION_MAJOR="2"
 START_GCODE="M300\n\t" + \
             "M107\n\t" + \
             "G28\n\t" + \
@@ -50,9 +50,9 @@ def fetch_files(path_to_files, version):
     for filename in glob.glob(path_to_files + "/*.xml"):
         tree = ET.parse(filename)
         root = tree.getroot()
-        version = root.find('version').text
+        version_major = root.find('version').text.split('.')[0]
 
-        if(version == COMPATIBLE_VERSION):
+        if(version_major == COMPATIBLE_VERSION_MAJOR):
             xml_temp_list.append(root)
 
     return xml_temp_list
@@ -74,9 +74,6 @@ def generate_ini_from_xml(xml_file, output_path):
     count = 0
 
     filament_name = xml_file.find('name').text.strip()
-    #filament_name = xml_file.find('name').text.replace(' ', '_')
-    #filament_name = filament_name.replace('-','_')
-    #filament_name = re.sub('_+', '_', filament_name).strip()
     
     for param in xml_file.find('defaults').findall('parameter'):
         defaults[param.get('name')] = param.get('value')
@@ -139,7 +136,7 @@ if __name__ == "__main__":
                     "path to a folder.")
             sys.exit(1)
     
-    xml_files = fetch_files(args.xml_path, COMPATIBLE_VERSION)
+    xml_files = fetch_files(args.xml_path, COMPATIBLE_VERSION_MAJOR)
 
     total_count = 0
     for f in xml_files:

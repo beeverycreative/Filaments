@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <filament>
-  <version>2.0.0</version>
+  <version>2.1.0</version>
   <name>A106 - Traffic Red</name>
+  <material>PLA</material>
   <defaults>
     <parameter name="ooze_shield" value="False"/>
     <parameter name="layer_height" value="0.3"/>
