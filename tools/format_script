@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for file in ./*
+for file in $1/*
 do
     if [[ "${file}" == *".xml" ]]; then
         echo $file
