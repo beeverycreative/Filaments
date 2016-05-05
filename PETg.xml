@@ -12,7 +12,7 @@
     <parameter name="fill_density" value="5"/>
     <parameter name="nozzle_size" value="0.4"/>
     <parameter name="print_speed" value="40"/>
-    <parameter name="print_temperature" value="230"/>
+    <parameter name="print_temperature" value="220"/>
     <parameter name="support" value="None"/>
     <parameter name="platform_adhesion" value="None"/>
     <parameter name="filament_diameter" value="1.75"/>
