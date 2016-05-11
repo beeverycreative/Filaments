@@ -24,12 +24,12 @@
     <parameter name="retraction_combing" value="All"/>
     <parameter name="retraction_minimal_extrusion" value="0.02"/>
     <parameter name="retraction_hop" value="0.0"/>
-    <parameter name="bottom_thickness" value="0.3"/>
+    <parameter name="bottom_thickness" value="0.1"/>
     <parameter name="layer0_width_factor" value="100.0"/>
     <parameter name="object_sink" value="0.0"/>
     <parameter name="overlap_dual" value="0.15"/>
     <parameter name="travel_speed" value="100"/>
-    <parameter name="bottom_layer_speed" value="20"/>
+    <parameter name="bottom_layer_speed" value="10"/>
     <parameter name="infill_speed" value="40"/>
     <parameter name="solidarea_speed" value="40"/>
     <parameter name="inset0_speed" value="40"/>
