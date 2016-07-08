@@ -106,4 +106,68 @@
       </resolution>
     </nozzle>
   </printer>
+  <printer type="BEEME">
+    <nozzle type="400">
+      <resolution type="low">
+      </resolution>
+      <resolution type="medium">
+        <parameter name="solid_layer_thickness" value="1.4"/>
+        <parameter name="layer_height" value="0.2"/>
+      </resolution>
+      <resolution type="high">
+        <parameter name="solid_layer_thickness" value="0.9"/>
+        <parameter name="layer_height" value="0.1"/>
+      </resolution>
+    </nozzle>
+    <nozzle type="600">
+      <resolution type="low">
+        <parameter name="nozzle_size" value="0.6"/>
+	<parameter name="wall_thickness" value="1.2"/>
+      </resolution>
+      <resolution type="medium">
+	<parameter name="nozzle_size" value="0.6"/>
+        <parameter name="wall_thickness" value="1.2"/>
+        <parameter name="solid_layer_thickness" value="1.4"/>
+        <parameter name="layer_height" value="0.2"/>
+      </resolution>
+      <resolution type="high">
+	<parameter name="nozzle_size" value="0.6"/>
+        <parameter name="wall_thickness" value="1.2"/>
+        <parameter name="solid_layer_thickness" value="0.9"/>
+        <parameter name="layer_height" value="0.1"/>
+      </resolution>
+    </nozzle>
+  </printer>
+  <printer type="BEEINSCHOOL">
+    <nozzle type="400">
+      <resolution type="low">
+      </resolution>
+      <resolution type="medium">
+        <parameter name="solid_layer_thickness" value="1.4"/>
+        <parameter name="layer_height" value="0.2"/>
+      </resolution>
+      <resolution type="high">
+        <parameter name="solid_layer_thickness" value="0.9"/>
+        <parameter name="layer_height" value="0.1"/>
+      </resolution>
+    </nozzle>
+    <nozzle type="600">
+      <resolution type="low">
+        <parameter name="nozzle_size" value="0.6"/>
+	<parameter name="wall_thickness" value="1.2"/>
+      </resolution>
+      <resolution type="medium">
+	<parameter name="nozzle_size" value="0.6"/>
+        <parameter name="wall_thickness" value="1.2"/>
+        <parameter name="solid_layer_thickness" value="1.4"/>
+        <parameter name="layer_height" value="0.2"/>
+      </resolution>
+      <resolution type="high">
+	<parameter name="nozzle_size" value="0.6"/>
+        <parameter name="wall_thickness" value="1.2"/>
+        <parameter name="solid_layer_thickness" value="0.9"/>
+        <parameter name="layer_height" value="0.1"/>
+      </resolution>
+    </nozzle>
+  </printer>
 </filament>
