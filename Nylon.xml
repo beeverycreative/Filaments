@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <filament>
   <version>2.1.0</version>
-  <name>PETg Transparent</name>
-  <material>PET</material>
+  <name>Nylon Filkemp</name>
+  <material>Nylon</material>
   <defaults>
     <parameter name="ooze_shield" value="False"/>
     <parameter name="layer_height" value="0.3"/>
@@ -11,7 +11,7 @@
     <parameter name="solid_layer_thickness" value="1.8"/>
     <parameter name="fill_density" value="5"/>
     <parameter name="nozzle_size" value="0.4"/>
-    <parameter name="print_speed" value="40"/>
+    <parameter name="print_speed" value="35"/>
     <parameter name="print_temperature" value="230"/>
     <parameter name="support" value="None"/>
     <parameter name="platform_adhesion" value="None"/>
@@ -24,25 +24,25 @@
     <parameter name="retraction_combing" value="All"/>
     <parameter name="retraction_minimal_extrusion" value="0.02"/>
     <parameter name="retraction_hop" value="0.0"/>
-    <parameter name="bottom_thickness" value="0.1"/>
+    <parameter name="bottom_thickness" value="0.3"/>
     <parameter name="layer0_width_factor" value="100.0"/>
     <parameter name="object_sink" value="0.0"/>
-    <parameter name="overlap_dual" value="0.3"/>
+    <parameter name="overlap_dual" value="0.15"/>
     <parameter name="travel_speed" value="100"/>
     <parameter name="bottom_layer_speed" value="10"/>
-    <parameter name="infill_speed" value="40"/>
-    <parameter name="solidarea_speed" value="40"/>
-    <parameter name="inset0_speed" value="40"/>
-    <parameter name="insetx_speed" value="40"/>
+    <parameter name="infill_speed" value="35"/>
+    <parameter name="solidarea_speed" value="30"/>
+    <parameter name="inset0_speed" value="30"/>
+    <parameter name="insetx_speed" value="30"/>
     <parameter name="cool_min_layer_time" value="5"/>
-    <parameter name="fan_enabled" value="True"/>
+    <parameter name="fan_enabled" value="False"/>
     <parameter name="skirt_line_count" value="0"/>
     <parameter name="skirt_gap" value="3.0"/>
     <parameter name="skirt_minimal_length" value="150.0"/>
-    <parameter name="fan_full_height" value="1.0"/>
+    <parameter name="fan_full_height" value="1"/>
     <parameter name="fan_speed" value="25"/>
     <parameter name="fan_speed_max" value="25"/>
-    <parameter name="cool_min_feedrate" value="20"/>
+    <parameter name="cool_min_feedrate" value="10"/>
     <parameter name="cool_head_lift" value="False"/>
     <parameter name="solid_top" value="True"/>
     <parameter name="solid_bottom" value="True"/>
@@ -79,6 +79,7 @@
       <resolution type="low">
       </resolution>
       <resolution type="medium">
+        <parameter name="bottom_thickness" value="0.2"/>
         <parameter name="solid_layer_thickness" value="1.4"/>
         <parameter name="layer_height" value="0.2"/>
       </resolution>
@@ -93,6 +94,7 @@
         <parameter name="wall_thickness" value="1.2"/>
       </resolution>
       <resolution type="medium">
+        <parameter name="bottom_thickness" value="0.2"/>
         <parameter name="nozzle_size" value="0.6"/>
         <parameter name="wall_thickness" value="1.2"/>
         <parameter name="solid_layer_thickness" value="1.4"/>
@@ -111,6 +113,7 @@
       <resolution type="low">
       </resolution>
       <resolution type="medium">
+        <parameter name="bottom_thickness" value="0.2"/>
         <parameter name="solid_layer_thickness" value="1.4"/>
         <parameter name="layer_height" value="0.2"/>
       </resolution>
@@ -125,6 +128,7 @@
         <parameter name="wall_thickness" value="1.2"/>
       </resolution>
       <resolution type="medium">
+        <parameter name="bottom_thickness" value="0.2"/>
         <parameter name="nozzle_size" value="0.6"/>
         <parameter name="wall_thickness" value="1.2"/>
         <parameter name="solid_layer_thickness" value="1.4"/>
@@ -143,6 +147,7 @@
       <resolution type="low">
       </resolution>
       <resolution type="medium">
+        <parameter name="bottom_thickness" value="0.2"/>
         <parameter name="solid_layer_thickness" value="1.4"/>
         <parameter name="layer_height" value="0.2"/>
       </resolution>
@@ -157,6 +162,7 @@
         <parameter name="wall_thickness" value="1.2"/>
       </resolution>
       <resolution type="medium">
+        <parameter name="bottom_thickness" value="0.2"/>
         <parameter name="nozzle_size" value="0.6"/>
         <parameter name="wall_thickness" value="1.2"/>
         <parameter name="solid_layer_thickness" value="1.4"/>
