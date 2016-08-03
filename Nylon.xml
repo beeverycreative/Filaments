@@ -29,8 +29,8 @@
     <parameter name="object_sink" value="0.0"/>
     <parameter name="overlap_dual" value="0.15"/>
     <parameter name="travel_speed" value="100"/>
-    <parameter name="bottom_layer_speed" value="10"/>
-    <parameter name="infill_speed" value="35"/>
+    <parameter name="bottom_layer_speed" value="20"/>
+    <parameter name="infill_speed" value="30"/>
     <parameter name="solidarea_speed" value="30"/>
     <parameter name="inset0_speed" value="30"/>
     <parameter name="insetx_speed" value="30"/>
