@@ -47,7 +47,7 @@
     <parameter name="solid_top" value="True"/>
     <parameter name="solid_bottom" value="True"/>
     <parameter name="fill_overlap" value="15"/>
-    <parameter name="perimeter_before_infill" value="False"/>
+    <parameter name="perimeter_before_infill" value="True"/>
     <parameter name="support_type" value="Lines"/>
     <parameter name="support_angle" value="45"/>
     <parameter name="support_fill_rate" value="15"/>
