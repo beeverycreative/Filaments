@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <filament>
-  <version>2.1.0</version>
+  <version>2.0.0</version>
   <name>PLA - A1xx Universal</name>
-  <material>PLA</material>
   <defaults>
     <parameter name="ooze_shield" value="False"/>
     <parameter name="layer_height" value="0.3"/>
@@ -12,7 +11,7 @@
     <parameter name="fill_density" value="5"/>
     <parameter name="nozzle_size" value="0.4"/>
     <parameter name="print_speed" value="40"/>
-    <parameter name="print_temperature" value="205"/>
+    <parameter name="print_temperature" value="210"/>
     <parameter name="support" value="None"/>
     <parameter name="platform_adhesion" value="None"/>
     <parameter name="filament_diameter" value="1.75"/>
@@ -27,7 +26,7 @@
     <parameter name="bottom_thickness" value="0.3"/>
     <parameter name="layer0_width_factor" value="100.0"/>
     <parameter name="object_sink" value="0.0"/>
-    <parameter name="overlap_dual" value="0"/>
+    <parameter name="overlap_dual" value="0.15"/>
     <parameter name="travel_speed" value="100"/>
     <parameter name="bottom_layer_speed" value="20"/>
     <parameter name="infill_speed" value="40"/>
@@ -46,8 +45,8 @@
     <parameter name="cool_head_lift" value="0"/>
     <parameter name="solid_top" value="True"/>
     <parameter name="solid_bottom" value="True"/>
-    <parameter name="fill_overlap" value="0"/>
-    <parameter name="perimeter_before_infill" value="True"/>
+    <parameter name="fill_overlap" value="15"/>
+    <parameter name="perimeter_before_infill" value="False"/>
     <parameter name="support_type" value="Lines"/>
     <parameter name="support_angle" value="45"/>
     <parameter name="support_fill_rate" value="10"/>
@@ -83,16 +82,16 @@
       </resolution>
       <resolution type="medium">
         <parameter name="layer_height" value="0.2"/>
-        <parameter name="solid_layer_thickness" value="1.4"/>
+	<parameter name="solid_layer_thickness" value="1.4"/>
       </resolution>
       <resolution type="high">
         <parameter name="layer_height" value="0.1"/>
-        <parameter name="solid_layer_thickness" value="0.9"/>
+	<parameter name="solid_layer_thickness" value="0.9"/>
       </resolution>
       <resolution type="high+">
-        <parameter name="layer_height" value="0.05"/>
         <parameter name="solid_layer_thickness" value="0.9"/>
         <parameter name="inset0_speed" value="30"/>
+        <parameter name="layer_height" value="0.05"/>
       </resolution>
     </nozzle>
   </printer>
@@ -109,12 +108,30 @@
       </resolution>
       <resolution type="high">
         <parameter name="layer_height" value="0.1"/>
-        <parameter name="solid_layer_thickness" value="0.9"/>
+	<parameter name="solid_layer_thickness" value="0.9"/>
       </resolution>
       <resolution type="high+">
-        <parameter name="layer_height" value="0.05"/>
         <parameter name="solid_layer_thickness" value="0.9"/>
         <parameter name="inset0_speed" value="30"/>
+        <parameter name="layer_height" value="0.05"/>
+      </resolution>
+    </nozzle>
+	<nozzle type="600">
+      <resolution type="low">
+        <parameter name="insetx_speed" value="50"/>
+        <parameter name="inset0_speed" value="50"/>
+        <parameter name="print_speed" value="40"/>
+	<parameter name="nozzle_size" value="0.6"/>
+      </resolution>
+      <resolution type="medium">
+        <parameter name="layer_height" value="0.2"/>
+	<parameter name="nozzle_size" value="0.6"/>
+	<parameter name="wall_thickness" value="1.4"/>
+      </resolution>
+      <resolution type="high">
+         <parameter name="layer_height" value="0.1"/>
+	 <parameter name="nozzle_size" value="0.6"/>
+	 <parameter name="wall_thickness" value="0.9"/>
       </resolution>
     </nozzle>
   </printer>
@@ -127,16 +144,34 @@
       </resolution>
       <resolution type="medium">
         <parameter name="layer_height" value="0.2"/>
-        <parameter name="solid_layer_thickness" value="1.4"/>
+	   <parameter name="solid_layer_thickness" value="1.4"/>
       </resolution>
       <resolution type="high">
         <parameter name="layer_height" value="0.1"/>
         <parameter name="solid_layer_thickness" value="0.9"/>
       </resolution>
       <resolution type="high+">
-        <parameter name="layer_height" value="0.05"/>
         <parameter name="solid_layer_thickness" value="0.9"/>
         <parameter name="inset0_speed" value="30"/>
+        <parameter name="layer_height" value="0.05"/>
+      </resolution>
+    </nozzle>
+	<nozzle type="600">
+      <resolution type="low">
+        <parameter name="insetx_speed" value="50"/>
+        <parameter name="inset0_speed" value="50"/>
+        <parameter name="print_speed" value="40"/>
+	   <parameter name="nozzle_size" value="0.6"/>
+      </resolution>
+      <resolution type="medium">
+        <parameter name="layer_height" value="0.2"/>
+	<parameter name="nozzle_size" value="0.6"/>
+	<parameter name="wall_thickness" value="1.4"/>
+      </resolution>
+      <resolution type="high">
+        <parameter name="layer_height" value="0.1"/>
+	<parameter name="nozzle_size" value="0.6"/>
+	<parameter name="wall_thickness" value="0.9"/>
       </resolution>
     </nozzle>
   </printer>
@@ -153,12 +188,30 @@
       </resolution>
       <resolution type="high">
         <parameter name="layer_height" value="0.1"/>
-        <parameter name="solid_layer_thickness" value="0.9"/>
+	  <parameter name="solid_layer_thickness" value="0.9"/>
       </resolution>
       <resolution type="high+">
-        <parameter name="layer_height" value="0.05"/>
         <parameter name="solid_layer_thickness" value="0.9"/>
         <parameter name="inset0_speed" value="30"/>
+        <parameter name="layer_height" value="0.05"/>
+      </resolution>
+    </nozzle>
+	<nozzle type="600">
+      <resolution type="low">
+        <parameter name="insetx_speed" value="50"/>
+        <parameter name="inset0_speed" value="50"/>
+        <parameter name="print_speed" value="40"/>
+	 <parameter name="nozzle_size" value="0.6"/>
+      </resolution>
+      <resolution type="medium">
+        <parameter name="layer_height" value="0.2"/>
+	<parameter name="nozzle_size" value="0.6"/>
+	<parameter name="wall_thickness" value="1.4"/>
+      </resolution>
+      <resolution type="high">
+        <parameter name="layer_height" value="0.1"/>
+	<parameter name="nozzle_size" value="0.6"/>
+	<parameter name="wall_thickness" value="0.9"/>
       </resolution>
     </nozzle>
   </printer>
