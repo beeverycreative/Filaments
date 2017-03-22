@@ -3,6 +3,8 @@
   <version>2.1.0</version>
   <name>B102 - Traffic White (TPU)</name>
   <material>TPU</material>
+  <UnloadTemperature>225</UnloadTemperature>
+  <UnloadType>2</UnloadType>
   <defaults>
     <parameter name="ooze_shield" value="False"/>
     <parameter name="layer_height" value="0.2"/>
