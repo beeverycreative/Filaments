@@ -2,7 +2,7 @@
 <filament>
   <version>2.1.0</version>
   <name>Nylon Filkemp</name>
-  <material>Nylon</material>
+  <material>NYLON</material>
   <UnloadTemperature>230</UnloadTemperature>
   <UnloadType>4</UnloadType>
   <defaults>
