@@ -3,9 +3,9 @@
   <version>2.2.0</version>
   <name>A021 - Transparent</name>
   <material>PLA</material>
-  <UnloadTemperature>160</UnloadTemperature>
+  <UnloadTemperature>210</UnloadTemperature>
   <UnloadType>1</UnloadType>
-  <UnloadTemperature>160</UnloadTemperature>
+  <UnloadTemperature>210</UnloadTemperature>
   <UnloadType>1</UnloadType>
   <defaults>
     <parameter name="ooze_shield" value="False"/>
