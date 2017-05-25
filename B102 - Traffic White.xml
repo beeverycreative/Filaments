@@ -41,9 +41,8 @@
     <parameter name="skirt_line_count" value="0"/>
     <parameter name="skirt_gap" value="3.0"/>
     <parameter name="skirt_minimal_length" value="150.0"/>
-    <parameter name="fan_full_height" value="0.5"/>
-    <parameter name="fan_speed" value="100"/>
-    <parameter name="fan_speed_max" value="100"/>
+    <parameter name="fan_speed" value="50"/>
+    <parameter name="fan_speed_max" value="50"/>
     <parameter name="cool_min_feedrate" value="20"/>
     <parameter name="cool_head_lift" value="False"/>
     <parameter name="solid_top" value="True"/>
