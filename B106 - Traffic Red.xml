@@ -38,7 +38,7 @@
     <parameter name="insetx_speed" value="20"/>
     <parameter name="cool_min_layer_time" value="5"/>
     <parameter name="fan_enabled" value="True"/>
-    <parameter name="skirt_line_count" value="0"/>
+    <parameter name="skirt_line_count" value="0.0"/>
     <parameter name="skirt_gap" value="3.0"/>
     <parameter name="skirt_minimal_length" value="150.0"/>
     <parameter name="fan_speed" value="50"/>
@@ -60,10 +60,10 @@
     <parameter name="raft_margin" value="5"/>
     <parameter name="raft_line_spacing" value="3.0"/>
     <parameter name="raft_base_thickness" value="0.3"/>
-    <parameter name="raft_base_linewidth" value="1"/>
+    <parameter name="raft_base_linewidth" value="1.0"/>
     <parameter name="raft_interface_thickness" value="0.27"/>
     <parameter name="raft_interface_linewidth" value="0.4"/>
-    <parameter name="raft_airgap_all" value="0"/>
+    <parameter name="raft_airgap_all" value="0.0"/>
     <parameter name="raft_airgap" value="0.22"/>
     <parameter name="raft_surface_layers" value="2"/>
     <parameter name="raft_surface_thickness" value="0.27"/>
